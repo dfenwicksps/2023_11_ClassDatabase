@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+</head>
+<body>
+    <h1>List of Courses</h1>
+    <ul>
+        {% for course in courses %}
+            <li>{{ course[1] }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Add a New Course</h2>
+<form action="/courses" method="post">
+    <label for="course_name">Course Name:</label>
+    <input type="text" id="course_name" name="course_name">
+    <input type="submit" value="Add Course">
+</form>
+    <a href="{{ url_for('index') }}">See Students</a>
+</body>
+</html>
