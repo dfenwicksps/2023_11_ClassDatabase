@@ -64,4 +64,4 @@ print("Database and tables created successfully!")
 # python setupdb.py
 # open terminal from within Pycharm
 # cd Flask_SampleDB
-# python setupdb.pyA
+# python setupdb.py
